@@ -1,0 +1,14 @@
+fastapi==0.78.0
+SQLAlchemy
+uvicorn==0.18.2
+pymysql
+python-dotenv
+pylint
+pytest
+httpx
+pytest-asyncio
+coverage
+passlib
+requests
+geoalchemy2
+psycopg2-binary~=2.9.9 
