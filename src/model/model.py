@@ -13,7 +13,8 @@ class Amostras(Base):
 
     # UTILIZAR PARA TESTES LOCAIS
     id: int = Column(Integer, primary_key = True, index = True)
-    idLulcn: str = Column(String(11), nullable = True)
+    idlulcn: str = Column(String(11), nullable = True)
+    coordenadas: str = Column(String(1000), nullable = True)
     geom: Mapped[WKBElement] = mapped_column(
         Geometry(geometry_type="POLYGON", srid=4326, spatial_index=True)
     )

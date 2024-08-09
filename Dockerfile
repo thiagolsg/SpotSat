@@ -6,6 +6,7 @@ COPY . .
 
 #RUN apt-get -y install libpq-dev gcc && pip install psycopg2
 RUN pip install -r requirements.txt
+#RUN python etl_amostras.py
  
 EXPOSE 8080
 

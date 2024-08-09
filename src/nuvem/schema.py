@@ -5,8 +5,8 @@ from pydantic import BaseModel
 class Amostras(BaseModel):
     '''Classe para definir os modelos recebidos na API'''
     # UTILIZAR PARA SUBIR PARA PRODUÇÃO
-    id = int
-   # geom = GeometryColumn(Polygon(2))
+    id: int
+    coordenadas: str
 
 
 class AmostrasRequest(Amostras):
@@ -14,6 +14,9 @@ class AmostrasRequest(Amostras):
 
 class AmostrasResponse(Amostras):
     '''...'''
+    id: int
+    coordenadas: str
+
     class Config:
         orm_mode = True
 

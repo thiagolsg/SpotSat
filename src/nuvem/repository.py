@@ -9,7 +9,7 @@ class AmostrasRepository:
         return database.query(Amostras).all()
     
     @staticmethod
-    def find_by_id(database: Session, id: str) -> Amostras:
+    def find_by_id(database: Session, id: int) -> Amostras:
         '''Função para fazer uma query por ID de um objeto aluna na DB'''
         return database.query(Amostras).filter(Amostras.id == id).first()
 
