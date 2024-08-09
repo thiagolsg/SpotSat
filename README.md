@@ -2,13 +2,13 @@
 
 ## Executar os comandos
 
-"""docker
+~~~
 docker-compose up
-"""
+~~~
 
-"""py
+~~~py
 python3 etl_amostras.py
-"""
+~~~
 
 ## Acessar o Swagger
 
